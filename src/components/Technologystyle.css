@@ -1,0 +1,441 @@
+.techContainer {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url(../starter-code/assets/technology/background-technology-desktop.jpg)
+    no-repeat center center fixed;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.techContentBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 60%;
+}
+
+.techContentBox h5 {
+  font-family: "Barlow Condensed", sans-serif;
+  /* font-family: "Bellefair", serif; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0px 0px 30px 8%;
+}
+
+.techContentBox .number {
+  font-family: "Barlow Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  padding-right: 25px;
+}
+
+.techContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.techNavbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 8%;
+}
+
+.techNavList {
+  margin: 17px;
+  list-style-type: none;
+}
+
+.techBtn {
+  height: 80px;
+  width: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  background-color: #0b0d17;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: "Bellefair", serif;
+}
+
+.techBorderBottom {
+  color: #0b0d17;
+  background-color: #ffffff;
+}
+
+.techBtn:hover {
+  border: 1px solid #ffffff;
+}
+
+.technavContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 5%;
+}
+
+.technavContent h6 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #d0d6f9;
+  margin: 20px 0px 5px 0px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.technavContent h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 64px;
+  color: #ffffff;
+  margin: 15px 0px;
+  text-transform: uppercase;
+  font-family: "Bellefair", serif;
+}
+
+.technavContent p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+  width: 47%;
+  font-family: "Barlow", sans-serif;
+}
+
+.techImg {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30%;
+  margin-top: 6%;
+}
+
+.techImg .tablet {
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .techContainer {
+    background: url(../starter-code/assets/technology/background-technology-tablet.jpg)
+      no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .techContentBox {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  .techContentBox h5 {
+    position: absolute;
+    width: 100%;
+    top: 7%;
+    left: 10%;
+    text-align: initial;
+    padding: 0px;
+  }
+
+  .techContent {
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .techNavbar {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 0px;
+  }
+
+  .technavContent {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .technavContent h6 {
+    font-size: 25px;
+    line-height: 24px;
+    letter-spacing: 2.7px;
+    margin: 20px 0px 10px 0px;
+  }
+
+  .technavContent h3 {
+    font-size: 60px;
+    margin: 15px 0px;
+  }
+
+  .technavContent p {
+    font-size: 20px;
+    line-height: 32px;
+    width: 67%;
+  }
+
+  .techImg {
+    justify-content: center;
+    align-items: center;
+    width: 102%;
+    height: auto;
+    margin-top: 15%;
+  }
+
+  .techImg .tablet {
+    display: inline;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .techImg .desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .techContainer {
+    background: url(../starter-code/assets/technology/background-technology-tablet.jpg)
+      no-repeat;
+    background-size: cover;
+    justify-content: unset;
+    flex-direction: column-reverse;
+  }
+
+  .techContentBox {
+    width: 80%;
+    margin: 0px auto 60px auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  .techContentBox h5 {
+    position: absolute;
+    width: 100%;
+    top: 9%;
+    left: 10%;
+    text-align: initial;
+    padding: 0px;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+
+  .techContentBox .number {
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 3px;
+    padding-right: 20px;
+  }
+
+  .techContent {
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .techNavbar {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 0px;
+  }
+
+  .techBtn {
+    height: 60px;
+    width: 60px;
+    font-size: 24px;
+  }
+
+  .technavContent {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .technavContent h6 {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2.7px;
+    margin: 10px 0px 7px 0px;
+  }
+
+  .technavContent h3 {
+    font-size: 40px;
+    margin: 10px 0px 5px 0px;
+  }
+
+  .technavContent p {
+    font-size: 16px;
+    line-height: 32px;
+    width: 71%;
+    margin-top: 5px;
+  }
+
+  .techImg {
+    position: absolute;
+    top: 9%;
+    justify-content: center;
+    align-items: center;
+    width: 102%;
+    height: auto;
+    margin-top: 15%;
+  }
+
+  .techImg .tablet {
+    display: inline;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .techImg .desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .techContainer {
+    background: url(../starter-code/assets/technology/background-technology-mobile.jpg)
+      no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .techContentBox {
+    width: 100%;
+    margin: 0px auto 10px auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  .techContentBox h5 {
+    position: absolute;
+    width: 100%;
+    margin: 10px auto;
+    top: 8%;
+    left: 27%;
+    /* text-align: initial; */
+    padding: 0px;
+    font-size: 16px;
+    letter-spacing: 2.5px;
+  }
+
+  .techContentBox .number {
+    font-size: 16px;
+    line-height: 34px;
+    letter-spacing: 2.5px;
+    padding-right: 15px;
+  }
+
+  .techContent {
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 64%;
+  }
+
+  .techNavbar {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 0px;
+  }
+
+  .techNavList {
+    margin: 10px;
+    list-style-type: none;
+  }
+
+  .techBtn {
+    height: 40px;
+    width: 40px;
+    font-size: 16px;
+  }
+
+  .technavContent {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .technavContent h6 {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 2.7px;
+    margin: 0px auto 5px auto;
+  }
+
+  .technavContent h3 {
+    font-size: 24px;
+    margin: 0px;
+    line-height: 45px;
+  }
+
+  .technavContent p {
+    font-size: 13px;
+    line-height: 25px;
+    width: 83%;
+    margin-top: 5px;
+  }
+
+  .techImg {
+    position: absolute;
+    top: 9%;
+    justify-content: center;
+    align-items: center;
+    width: 102%;
+    height: auto;
+    margin-top: 15%;
+  }
+
+  .techImg .tablet {
+    display: inline;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .techImg .desktop {
+    display: none;
+  }
+}

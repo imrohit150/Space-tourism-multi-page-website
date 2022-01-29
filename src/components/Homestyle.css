@@ -1,0 +1,244 @@
+/* font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bellefair', serif; */
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url(../starter-code/assets/home/background-home-desktop.jpg) no-repeat center
+    center fixed;
+  /* image-rendering: pixelated; */
+  /* background-repeat: no-repeat; */
+  background-size: 100% 100%;
+  /* object-fit: cover; */
+  /* box-sizing: border-box; */
+}
+
+.content {
+  position: relative;
+  height: 100%;
+  width: 80%;
+  margin: 0px auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contentText {
+  margin-top: 100px;
+  padding: 50px;
+  width: 40%;
+  height: auto;
+  line-height: 25px;
+}
+
+.contentText h5 {
+  color: #d0d6f9;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 4.725px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.contentText h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Bellefair", serif;
+}
+
+.contentText p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Barlow", sans-serif;
+  color: #d0d6f9;
+  line-height: 32px;
+  width: 73%;
+}
+
+.contentBtn {
+  display: flex;
+  justify-content: center;
+  padding-right: 50px;
+  margin-top: 180px;
+  width: 40%;
+}
+
+.contentBtn .contentBtnContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 274px;
+  height: 274px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+
+.contentBtn .contentBtnContainer:hover{
+  border: 30px solid rgb(63, 63, 70)
+}
+
+.contentBtn .contentBtnContainer .btn {
+  font-weight: 500;
+  font-size: 32px;
+  letter-spacing: 2px;
+  color: #0b0d17;
+  text-transform: uppercase;
+  font-family: "Bellefair", serif;
+  border-radius: 50%;
+  background-color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    background: url(../starter-code/assets/home/background-home-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .content {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .contentText {
+    margin-top: 0px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .contentText h5 {
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 3.375px;
+    padding-left: 0px;
+  }
+
+  .contentText h1 {
+    text-align: center;
+    font-size: 165px;
+  }
+
+  .contentText p {
+    font-size: 25px;
+    line-height: 40px;
+    margin: auto;
+    width: 84%;
+  }
+
+  .contentBtn {
+    margin-top: 20%;
+    padding: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    background: url(../starter-code/assets/home/background-home-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .contentText {
+    margin-top: 75px;
+  }
+
+  .contentText h5 {
+    font-size: 20px;
+  }
+
+  .contentText h1 {
+    font-size: 150px;
+    margin: 83px auto 68px auto;
+  }
+
+  .contentText p {
+    font-size: 16px;
+    line-height: 26px;
+    width: 72%;
+  }
+
+  .contentBtn {
+    margin-top: 15%;
+    padding: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+
+  .contentBtn .contentBtnContainer{
+    width: 242px;
+    height: 242px;
+  }
+
+  .contentBtn .contentBtnContainer .btn {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    background: url(../starter-code/assets/home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .content {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contentText {
+    margin-top: 35px;
+  }
+
+  .contentText h5 {
+    margin: 5px auto;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2.5px;
+    padding-left: 0px;
+  }
+
+  .contentText h1 {
+    text-align: center;
+    font-size: 80px;
+    margin: 35px auto 35px auto;
+  }
+
+  .contentText p {
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    width: 87%;
+  }
+
+  .contentBtn {
+    margin-top: 20%;
+  }
+
+  .contentBtn .contentBtnContainer{
+    width: 150px;
+    height: 150px;
+  }
+
+  .contentBtn .contentBtnContainer .btn {
+    font-size: 20px;
+  }
+}
